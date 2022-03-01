@@ -19,7 +19,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := oneplus
 
-COMMON_PATH := device/oneplus/sm8350-common
+COMMON_PATH := device/oneplus/sm4350-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -63,7 +63,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
     LLVM=1
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8350
+TARGET_KERNEL_SOURCE := kernel/oneplus/sm4350
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig
 
 # Kernel modules
@@ -232,4 +232,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/oneplus/sm8350-common/BoardConfigVendor.mk
+-include vendor/oneplus/sm4350-common/BoardConfigVendor.mk
