@@ -286,6 +286,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+# DiracGef
+PRODUCT_PACKAGES += \
+    OnePlusDiracGef
+
 # Doze
 PRODUCT_PACKAGES += \
     OnePlusDoze
@@ -299,9 +303,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fingerprint
+# FM
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -392,9 +398,10 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
+    android.hardware.nfc@1.2-service.st:64 \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
+    nfc_nci.st21nfc.default \
     SecureElement \
     Tag
 
@@ -480,11 +487,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus
 
-# tri-state-key
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -508,7 +510,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus
+    vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
