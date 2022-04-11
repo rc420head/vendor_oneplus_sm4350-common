@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     init.oem.rc \
     init.oem_ftm.rc \
     init.oem_rf.rc \
+    init.oem.usb.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.factory.rc \
