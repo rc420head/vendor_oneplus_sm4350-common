@@ -486,10 +486,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -513,6 +509,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
+    vibrator.default \
     vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
