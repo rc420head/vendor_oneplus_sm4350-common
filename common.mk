@@ -489,7 +489,6 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vibrator.default \
     vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
