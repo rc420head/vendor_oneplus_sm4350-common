@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlusN200Oxygen_10.O.10_OTA_010_all_2201101017_e9e4d965aa084e17
+# All unpinned blobs below are extracted from OnePlusN200Oxygen_10.O.11_OTA_011_all_2203021426_2dd4f42a2d0545a3
 
 # ADSP
 vendor/bin/adsprpcd
